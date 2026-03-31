@@ -1,4 +1,4 @@
-@'
+
 {
   "build": {
     "builder": "NIXPACKS"
@@ -7,4 +7,3 @@
     "startCommand": "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"
   }
 }
-'@ | Out-File -FilePath railway.json -Encoding ascii
