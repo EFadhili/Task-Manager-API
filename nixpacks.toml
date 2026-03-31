@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["php85", "php85Extensions.pdo_mysql", "php85Extensions.mysqli", "php85Extensions.fileinfo", "php85Extensions.mbstring", "php85Extensions.openssl", "composer"]
+
+[phases.install]
+cmds = ["composer install --no-dev --optimize-autoloader"]
+
+[phases.build]
+cmds = ["cp .env.example .env", "php artisan key:generate"]
+
+[start]
+cmd = "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"
