@@ -9,18 +9,19 @@ The system exposes a RESTful API and includes a simple frontend interface for in
 
 ## Table of Contents
 
-- [Live Demo](#-Live-Demo)
-- [Features](#-Features)
-- [Tech Stack](#-tech-stack)
-- [Business Rules](#-business-rules)
-- [API Documentation](#-api-documentation)
-- [Local Setup](#-local-setup)
-- [Deployment Guide](#-deployment-guide)
-- [Testing](#-testing)
-- [Project Structure](#-project-structure)
-- [Error Handling](#-error-handling)
-- [Database Schema](#-database-schema)
-- [Author](#-author)
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Business Rules](#business-rules)
+- [API Documentation](#api-documentation)
+- [Local Setup](#local-setup)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [Project Structure](#project-structure)
+- [Error Handling](#error-handling)
+- [Database Schema](#database-schema)
+- [Author](#author)
+- [Acknowledgment](#acknowledgment)
 
 ---
 
@@ -375,7 +376,7 @@ php artisan serve
 
 Supports deployment via Railway or Render with standard Laravel build and start commands.
 
-### Testing
+## Testing
 
 You can test using:
 
