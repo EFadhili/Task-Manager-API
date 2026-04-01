@@ -1,0 +1,99 @@
+{
+    "config": {
+        "allow-plugins": {
+            "heroku/installer-plugin": true
+        },
+        "cache-files-ttl": 0,
+        "discard-changes": true
+    },
+    "minimum-stability": "RC",
+    "prefer-stable": true,
+    "provide": {
+        "heroku-sys\/heroku": "24.2025.05.05"
+    },
+    "replace": {},
+    "require": {
+        "composer.json\/composer.lock": "dev-39a12d6d0d92f13d9f6ad8ad42beea71",
+        "symfony\/process": "v7.2.0-RC1",
+        "heroku-sys\/composer": "*",
+        "heroku-sys\/composer-plugin-api": "^2",
+        "heroku-sys\/apache": "^2.4.10",
+        "heroku-sys\/nginx": "^1.8.0"
+    },
+    "require-dev": {
+        "composer.json\/composer.lock-require-dev": "dev-39a12d6d0d92f13d9f6ad8ad42beea71",
+        "kahlan\/kahlan": "5.2.8"
+    },
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "path",
+            "url": "..\/..\/..\/..\/..\/support\/installer",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://DUMMYPLATFORMHOST/DUMMYPLATFORMPATH"
+        },
+        {
+            "type": "package",
+            "package": [
+                {
+                    "type": "metapackage",
+                    "name": "symfony\/process",
+                    "version": "v7.2.0-RC1",
+                    "require": {
+                        "heroku-sys\/php": ">=8.2"
+                    },
+                    "replace": {},
+                    "provide": {},
+                    "conflict": {}
+                },
+                {
+                    "type": "metapackage",
+                    "name": "composer.json\/composer.lock",
+                    "version": "dev-39a12d6d0d92f13d9f6ad8ad42beea71",
+                    "require": {
+                        "heroku-sys\/ext-gmp": "*",
+                        "heroku-sys\/ext-intl": "*",
+                        "heroku-sys\/ext-mbstring": "*",
+                        "heroku-sys\/ext-redis": "*",
+                        "heroku-sys\/ext-sqlite3": "*",
+                        "heroku-sys\/ext-ldap": "*",
+                        "heroku-sys\/ext-imap": "*",
+                        "heroku-sys\/ext-blackfire": "*"
+                    },
+                    "replace": {},
+                    "provide": {},
+                    "conflict": {}
+                },
+                {
+                    "type": "metapackage",
+                    "name": "kahlan\/kahlan",
+                    "version": "5.2.8",
+                    "require": {
+                        "heroku-sys\/php": ">=7.2"
+                    },
+                    "replace": {},
+                    "provide": {},
+                    "conflict": {}
+                },
+                {
+                    "type": "metapackage",
+                    "name": "composer.json\/composer.lock-require-dev",
+                    "version": "dev-39a12d6d0d92f13d9f6ad8ad42beea71",
+                    "require": {
+                        "heroku-sys\/ext-pcov": "*"
+                    },
+                    "replace": {},
+                    "provide": {},
+                    "conflict": {}
+                }
+            ]
+        }
+    ]
+}

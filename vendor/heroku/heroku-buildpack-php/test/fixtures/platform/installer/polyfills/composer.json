@@ -1,0 +1,46 @@
+{
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "dummypak/ext-imap-polyfill",
+				"version": "1.0.3",
+				"type": "metapackage",
+				"require": {
+					"php": "^7.0 | ^8.0"
+				},
+				"provide": {
+					"ext-imap": "8.3.0"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "dummypak/ext-pq-polyfill",
+				"version": "1.1.7",
+				"type": "metapackage",
+				"require": {
+					"php": "^7.0 | ^8.0"
+				},
+				"provide": {
+					"ext-pq": "*"
+				}
+			}
+		}
+	],
+	"require": {
+		"php": "8.3.*",
+		"dummypak/ext-pq-polyfill": "^1.0",
+		"dummypak/ext-imap-polyfill": "^1.0",
+		"symfony/polyfill-ctype": "^1.24.0",
+		"symfony/polyfill-mbstring": "^1.32.0",
+		"symfony/polyfill-uuid": "^1.24.0",
+		"ext-ctype": "*",
+		"ext-gd": "*",
+		"ext-imap": "*",
+		"ext-newrelic": "*",
+		"ext-pq": "*",
+		"ext-uuid": "*"
+	}
+}

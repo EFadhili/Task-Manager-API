@@ -1,0 +1,153 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "39a12d6d0d92f13d9f6ad8ad42beea71",
+    "packages": [
+        {
+            "name": "symfony/process",
+            "version": "v7.2.0-RC1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "d34b22ba9390ec19d2dd966c40aa9e8462f27a7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d34b22ba9390ec19d2dd966c40aa9e8462f27a7e",
+                "reference": "d34b22ba9390ec19d2dd966c40aa9e8462f27a7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v7.2.0-RC1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-11-06T14:24:19+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "kahlan/kahlan",
+            "version": "5.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kahlan/kahlan.git",
+                "reference": "8a403d35bd564a2a315a7c4544e73827ef56c540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kahlan/kahlan/zipball/8a403d35bd564a2a315a7c4544e73827ef56c540",
+                "reference": "8a403d35bd564a2a315a7c4544e73827ef56c540",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "rector/rector": "^1.1.1",
+                "squizlabs/php_codesniffer": "^3.10.1"
+            },
+            "bin": [
+                "bin/kahlan"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Kahlan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CrysaLEAD"
+                }
+            ],
+            "description": "The PHP Test Framework for Freedom, Truth and Justice.",
+            "keywords": [
+                "BDD",
+                "Behavior-Driven Development",
+                "Monkey Patching",
+                "TDD",
+                "mock",
+                "stub",
+                "testing",
+                "unit test"
+            ],
+            "support": {
+                "issues": "https://github.com/kahlan/kahlan/issues",
+                "source": "https://github.com/kahlan/kahlan/tree/5.2.8"
+            },
+            "time": "2024-10-18T19:01:44+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "RC",
+    "stability-flags": {
+        "symfony/process": 5
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "ext-gmp": "*",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "ext-redis": "*",
+        "ext-sqlite3": "*",
+        "ext-ldap": "*",
+        "ext-imap": "*",
+        "ext-blackfire": "*"
+    },
+    "platform-dev": {
+        "ext-pcov": "*"
+    },
+    "plugin-api-version": "2.3.0"
+}

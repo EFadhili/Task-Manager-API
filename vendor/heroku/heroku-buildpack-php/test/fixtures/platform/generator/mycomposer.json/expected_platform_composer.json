@@ -1,0 +1,62 @@
+{
+    "config": {
+        "allow-plugins": {
+            "heroku/installer-plugin": true
+        },
+        "cache-files-ttl": 0,
+        "discard-changes": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": false,
+    "provide": {
+        "heroku-sys\/heroku": "24.2025.05.04"
+    },
+    "replace": {},
+    "require": {
+        "mycomposer.json\/mycomposer.lock": "dev-c3c046c73c7cf3251beeb608d39d0a28",
+        "heroku-sys\/composer": "*",
+        "heroku-sys\/composer-plugin-api": "^2",
+        "heroku-sys\/apache": "^2.4.10",
+        "heroku-sys\/nginx": "^1.8.0"
+    },
+    "require-dev": {},
+    "repositories": [
+        {
+            "packagist": false
+        },
+        {
+            "type": "path",
+            "url": "..\/..\/..\/..\/..\/support\/installer",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://DUMMYPLATFORMHOST/DUMMYPLATFORMPATH"
+        },
+        {
+            "type": "package",
+            "package": [
+                {
+                    "type": "metapackage",
+                    "name": "mycomposer.json\/mycomposer.lock",
+                    "version": "dev-c3c046c73c7cf3251beeb608d39d0a28",
+                    "require": {
+                        "heroku-sys\/php": "^8.4.0",
+                        "heroku-sys\/ext-gmp": "*",
+                        "heroku-sys\/ext-intl": "*",
+                        "heroku-sys\/ext-mbstring": "*",
+                        "heroku-sys\/ext-redis": "*",
+                        "heroku-sys\/ext-sqlite3": "*",
+                        "heroku-sys\/ext-ldap": "*",
+                        "heroku-sys\/ext-imap": "*"
+                    },
+                    "replace": {},
+                    "provide": {},
+                    "conflict": {}
+                }
+            ]
+        }
+    ]
+}

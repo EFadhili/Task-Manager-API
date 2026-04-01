@@ -946,6 +946,54 @@
             "install-path": "../hamcrest/hamcrest-php"
         },
         {
+            "name": "heroku/heroku-buildpack-php",
+            "version": "v285",
+            "version_normalized": "285.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/heroku/heroku-buildpack-php.git",
+                "reference": "8fb15acb4ab0c9753256be702fe0d12f74f6735d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/8fb15acb4ab0c9753256be702fe0d12f74f6735d",
+                "reference": "8fb15acb4ab0c9753256be702fe0d12f74f6735d",
+                "shasum": ""
+            },
+            "time": "2026-03-17T04:06:57+00:00",
+            "bin": [
+                "bin/heroku-php-apache2",
+                "bin/heroku-php-nginx"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Zuelke",
+                    "email": "dz@heroku.com"
+                }
+            ],
+            "description": "Toolkit for starting a PHP application locally, with or without foreman, using the same config for PHP and Apache2/Nginx as on Heroku",
+            "homepage": "https://github.com/heroku/heroku-buildpack-php",
+            "keywords": [
+                "apache",
+                "apache2",
+                "foreman",
+                "heroku",
+                "nginx",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/heroku/heroku-buildpack-php/issues",
+                "source": "https://github.com/heroku/heroku-buildpack-php/tree/v285"
+            },
+            "install-path": "../heroku/heroku-buildpack-php"
+        },
+        {
             "name": "laravel/framework",
             "version": "v10.48.8",
             "version_normalized": "10.48.8.0",
@@ -4849,23 +4897,23 @@
         },
         {
             "name": "symfony/css-selector",
-            "version": "v7.4.8",
-            "version_normalized": "7.4.8.0",
+            "version": "v8.0.8",
+            "version_normalized": "8.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
-                "reference": "b055f228a4178a1d6774909903905e3475f3eac8"
+                "reference": "8db1c00226a94d8ab6aa89d9224eeee91e2ea2ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/b055f228a4178a1d6774909903905e3475f3eac8",
-                "reference": "b055f228a4178a1d6774909903905e3475f3eac8",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/8db1c00226a94d8ab6aa89d9224eeee91e2ea2ed",
+                "reference": "8db1c00226a94d8ab6aa89d9224eeee91e2ea2ed",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.4"
             },
-            "time": "2026-03-24T13:12:05+00:00",
+            "time": "2026-03-30T15:14:47+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4897,7 +4945,7 @@
             "description": "Converts CSS selectors to XPath expressions",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/css-selector/tree/v7.4.8"
+                "source": "https://github.com/symfony/css-selector/tree/v8.0.8"
             },
             "funding": [
                 {

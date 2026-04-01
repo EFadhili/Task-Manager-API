@@ -1,0 +1,35 @@
+name: Hatchet App Cleaner
+
+on:
+  schedule:
+    # Daily at 6am UTC.
+    - cron: "0 6 * * *"
+  # Allow the workflow to be manually triggered too.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # ensure these are in sync with other relevant workflow files
+  setup_ruby_ruby_version: "3.2"
+
+jobs:
+  hatchet-app-cleaner:
+    runs-on: ubuntu-24.04
+    env:
+      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      HEROKU_API_USER: ${{ secrets.HEROKU_API_USER }}
+      HEROKU_DISABLE_AUTOUPDATE: 1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Install Ruby and dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: "${{ env.setup_ruby_ruby_version }}"
+      - name: Run Hatchet destroy
+        # Only apps older than 10 minutes are destroyed, to ensure that any
+        # in progress CI runs are not interrupted.
+        run: bundle exec hatchet destroy --older-than 10
