@@ -356,6 +356,16 @@ cp .env.example .env
 php artisan key:generate
 ```
 
+**Configure MySQL Connection in .env**
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tasks
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
 **Database Setup**
 
 **MySQL**
@@ -374,7 +384,25 @@ php artisan serve
 
 ## Deployment
 
-Supports deployment via Railway or Render with standard Laravel build and start commands.
+### Railway Deployment
+
+1. Create a new project on Railway
+
+2. Connect your GitHub repository
+
+3. Set environment variables (same as .env) in the Railway dashboard
+
+4. Configure:
+
+   - Build Command: composer install --no-dev --optimize-autoloader
+
+   - Start Command: php artisan migrate --force && php -S 0.0.0.0:$PORT -t public
+
+5. Run migrations:
+   ```
+   php artisan migrate --force
+   ```
+The application will be deployed and accessible via the provided Railway URL.
 
 ## Testing
 
