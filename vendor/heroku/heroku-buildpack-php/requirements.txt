@@ -1,2 +1,0 @@
-bob-builder>=0.0.20
-natsort

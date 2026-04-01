@@ -3,7 +3,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "php artisan migrate --force && vendor/bin/heroku-php-apache2 public/",
+    "startCommand": "php artisan migrate --force && php -S 0.0.0.0:$PORT -t public",
     "healthcheckPath": "/",
     "healthcheckTimeout": 300
   }
