@@ -4,8 +4,8 @@
     "description": "Task Manager API for Cytonn",
     "license": "MIT",
     "require": {
-        "php": "^8.3",
-        "laravel/framework": "^10.48",
+        "php": "8.3.*",
+        "laravel/framework": "10.48.8",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
@@ -32,8 +32,17 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
+        "platform": {
+            "php": "8.3.15"
+        },
         "allow-plugins": {
             "php-http/discovery": true
+        },
+        "audit": {
+            "ignore": [
+                "PKSA-8qx3-n5y5-vvnd",
+                "PKSA-w7xr-vk7n-rstm"
+            ]
         }
     },
     "minimum-stability": "stable",

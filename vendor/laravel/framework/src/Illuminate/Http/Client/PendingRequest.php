@@ -222,7 +222,7 @@ class PendingRequest
      * @param  array  $middleware
      * @return void
      */
-    public function __construct(?Factory $factory = null, $middleware = [])
+    public function __construct(Factory $factory = null, $middleware = [])
     {
         $this->factory = $factory;
         $this->middleware = new Collection($middleware);
@@ -690,7 +690,7 @@ class PendingRequest
      * @param  callable|null  $callback
      * @return $this
      */
-    public function throw(?callable $callback = null)
+    public function throw(callable $callback = null)
     {
         $this->throwCallback = $callback ?: fn () => null;
 
@@ -911,15 +911,11 @@ class PendingRequest
                             $response->throw($this->throwCallback);
                         }
 
-                        $potentialTries = is_array($this->tries)
-                            ? count($this->tries) + 1
-                            : $this->tries;
-
-                        if ($attempt < $potentialTries && $shouldRetry) {
+                        if ($attempt < $this->tries && $shouldRetry) {
                             $response->throw();
                         }
 
-                        if ($potentialTries > 1 && $this->retryThrow) {
+                        if ($this->tries > 1 && $this->retryThrow) {
                             $response->throw();
                         }
                     }
