@@ -9,8 +9,8 @@ The system exposes a RESTful API and includes a simple frontend interface for in
 
 ## Table of Contents
 
-- [Live Demo](#-live-demo)
-- [Features](#-features)
+- [Live Demo](#-Live-Demo)
+- [Features](#-Features)
 - [Tech Stack](#-tech-stack)
 - [Business Rules](#-business-rules)
 - [API Documentation](#-api-documentation)
